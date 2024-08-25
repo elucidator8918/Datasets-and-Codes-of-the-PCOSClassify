@@ -42,14 +42,12 @@ Our study evaluates the following models:
 6. VGG19
 7. Xception
 8. DenseNet169
-9. EfficientNetB7
-10. ConvNeXtBase
+9. ConvNeXtBase
 
 #### Binary Classification:
 - Models 1-7: `/Binary-Classification/7_Transfer_Learning_Models.ipynb`
 - Model 8: `/Binary-Classification/DenseNet169.ipynb`
-- Model 9: `/Binary-Classification/EfficientNetB7.ipynb`
-- Model 10: `/Binary-Classification/ConvNext.ipynb`
+- Model 9: `/Binary-Classification/ConvNext.ipynb`
 
 #### Multi-label Classification:
 - Model 1: `/Multi-label-Classification/multilabel_TL_InceptionResNetV2.ipynb`
@@ -60,8 +58,7 @@ Our study evaluates the following models:
 - Model 6: `/Multi-label-Classification/multilabel_TL_VGG19.ipynb`
 - Model 7: `/Multi-label-Classification/multilabel_TL_Xception.ipynb`
 - Model 8: `/Multi-label-Classification/multilabel_TL_DenseNet169.ipynb`
-- Model 9: `/Multi-label-Classification/multilabel_TL_EfficientNetB7.ipynb`
-- Model 10: `/Multi-label-Classification/multilabel_TL_ConvNeXtBase.ipynb`
+- Model 9: `/Multi-label-Classification/multilabel_TL_ConvNeXtBase.ipynb`
 
 Our findings suggest that both machine learning and transfer learning approaches hold significant promise for automated PCOS detection. However, further research is needed to optimize these techniques and improve their clinical applicability.
 
@@ -75,7 +72,6 @@ A comprehensive technical paper detailing our methodology, results, and insights
 │   ├── 7_Transfer_Learning_Models.ipynb
 │   ├── ConvNext.ipynb
 │   ├── DenseNet169.ipynb
-│   ├── EfficientNetB7.ipynb
 │   ├── ML_Models_1.ipynb
 │   ├── ML_Models_2.ipynb
 │   └── README.md
@@ -83,7 +79,6 @@ A comprehensive technical paper detailing our methodology, results, and insights
 │   ├── multilabel_ML.ipynb
 │   ├── multilabel_TL_ConvNeXtBase.ipynb
 │   ├── multilabel_TL_DenseNet169.ipynb
-│   ├── multilabel_TL_EfficientNetB7.ipynb
 │   ├── multilabel_TL_InceptionResNetV2.ipynb
 │   ├── multilabel_TL_InceptionV3.ipynb
 │   ├── multilabel_TL_MobileNetV2.ipynb
@@ -165,9 +160,6 @@ Certainly. Here's a comprehensive breakdown of the running experiments, detailin
 - **Notebook: `Binary-Classification/DenseNet169.ipynb`**  
   **Description**: Applies the DenseNet169 architecture for binary PCOS classification using transfer learning.
 
-- **Notebook: `Binary-Classification/EfficientNetB7.ipynb`**  
-  **Description**: Utilizes the EfficientNetB7 model for binary PCOS classification through transfer learning.
-
 - **Notebook: `Binary-Classification/ConvNext.ipynb`**  
   **Description**: Implements the ConvNeXt Base model for binary PCOS classification using transfer learning techniques.
 
@@ -181,9 +173,6 @@ Certainly. Here's a comprehensive breakdown of the running experiments, detailin
 
 - **Notebook: `Multilabel-Classification/multilabel_TL_DenseNet169.ipynb`**  
   **Description**: Applies the DenseNet169 architecture for multi-label PCOS classification using transfer learning.
-
-- **Notebook: `Multilabel-Classification/multilabel_TL_EfficientNetB7.ipynb`**  
-  **Description**: Implements the EfficientNetB7 architecture for multi-label PCOS classification through transfer learning.
 
 - **Notebook: `Multilabel-Classification/multilabel_TL_InceptionResNetV2.ipynb`**  
   **Description**: Leverages the InceptionResNetV2 architecture for multi-label PCOS classification with transfer learning.
@@ -218,41 +207,41 @@ The preview of the comprehensive results section of our technical paper can be s
 
 ### Training Data
 
-| Metric                                 | VGG19 | Xception | ResNet50V2 | InceptionV3 | InceptionResNetV2 | MobileNetV2 | DenseNet169 | NASNetMobile | EfficientNetB7 | ConvNeXtBase |
-|----------------------------------------|---------|----------|------------|-------------|-------------------|-------------|-------------|--------------|----------------|--------------|
-| **Overall Accuracy (avg. of 250 epochs)** | 0.90    | 0.94     | 0.97       | 0.95        | 0.95              | 0.97        | 0.95        | 0.97         | 0.61           | 0.90         |
-| **Overall Accuracy (last epoch)**       | 0.96    | 0.98     | 0.99       | 0.99        | 0.99              | 0.98        | 0.98        | 0.99         | 0.62           | 0.94         |
-| **Binary Accuracy (avg. of 250 epochs)**| 0.90    | 0.94     | 0.97       | 0.95        | 0.95              | 0.97        | 0.95        | 0.97         | 0.61           | 0.90         |
-| **Binary Accuracy (last epoch)**        | 0.96    | 0.98     | 0.99       | 0.99        | 0.99              | 0.98        | 0.98        | 0.99         | 0.62           | 0.94         |
-| **Overall Categorical Accuracy (avg.)** | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00           | 1.00         |
-| **Overall Categorical Accuracy (last)** | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00           | 1.00         |
-| **Top-k Categorical Accuracy (avg.)**   | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00           | 1.00         |
-| **Top-k Categorical Accuracy (last)**   | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00           | 1.00         |
-| **Precision (avg. of 250 epochs)**      | 0.84    | 0.90     | 0.95       | 0.92        | 0.92              | 0.94        | 0.90        | 0.94         | 0.31           | 0.83         |
-| **Precision (last epoch)**              | 0.95    | 0.96     | 0.98       | 0.98        | 0.98              | 0.97        | 0.96        | 0.97         | 0.33           | 0.90         |
-| **Recall (avg. of 250 epochs)**         | 0.81    | 0.90     | 0.95       | 0.92        | 0.92              | 0.94        | 0.90        | 0.94         | 0.30           | 0.83         |
-| **Recall (last epoch)**                | 0.92    | 0.96     | 0.98       | 0.98        | 0.98              | 0.97        | 0.97        | 0.97         | 0.33           | 0.89         |
-| **Loss (avg. of 250 epochs)**           | 0.24    | 0.86     | 1.19       | 1.12        | 0.69              | 0.93        | 0.86        | 0.38         | 4.89           | 0.69         |
-| **Loss (last epoch)**                  | 0.10    | 0.57     | 1.35       | 0.67        | 0.37              | 0.87        | 0.52        | 0.39         | 5.53           | 0.49         |
+| Metric                                 | VGG19 | Xception | ResNet50V2 | InceptionV3 | InceptionResNetV2 | MobileNetV2 | DenseNet169 | NASNetMobile | ConvNeXtBase |
+|----------------------------------------|---------|----------|------------|-------------|-------------------|-------------|-------------|--------------|--------------|
+| **Overall Accuracy (avg. of 250 epochs)** | 0.90    | 0.94     | 0.97       | 0.95        | 0.95              | 0.97        | 0.95        | 0.97         | 0.90         |
+| **Overall Accuracy (last epoch)**       | 0.96    | 0.98     | 0.99       | 0.99        | 0.99              | 0.98        | 0.98        | 0.99         | 0.94         |
+| **Binary Accuracy (avg. of 250 epochs)**| 0.90    | 0.94     | 0.97       | 0.95        | 0.95              | 0.97        | 0.95        | 0.97         | 0.90         |
+| **Binary Accuracy (last epoch)**        | 0.96    | 0.98     | 0.99       | 0.99        | 0.99              | 0.98        | 0.98        | 0.99         | 0.94         |
+| **Overall Categorical Accuracy (avg.)** | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00         |
+| **Overall Categorical Accuracy (last)** | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00         |
+| **Top-k Categorical Accuracy (avg.)**   | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00         |
+| **Top-k Categorical Accuracy (last)**   | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00         |
+| **Precision (avg. of 250 epochs)**      | 0.84    | 0.90     | 0.95       | 0.92        | 0.92              | 0.94        | 0.90        | 0.94         | 0.83         |
+| **Precision (last epoch)**              | 0.95    | 0.96     | 0.98       | 0.98        | 0.98              | 0.97        | 0.96        | 0.97         | 0.90         |
+| **Recall (avg. of 250 epochs)**         | 0.81    | 0.90     | 0.95       | 0.92        | 0.92              | 0.94        | 0.90        | 0.94         | 0.83         |
+| **Recall (last epoch)**                | 0.92    | 0.96     | 0.98       | 0.98        | 0.98              | 0.97        | 0.97        | 0.97         | 0.89         |
+| **Loss (avg. of 250 epochs)**           | 0.24    | 0.86     | 1.19       | 1.12        | 0.69              | 0.93        | 0.86        | 0.38         | 0.69         |
+| **Loss (last epoch)**                  | 0.10    | 0.57     | 1.35       | 0.67        | 0.37              | 0.87        | 0.52        | 0.39         | 0.49         |
 
 ### Validation Data
 
-| Metric                                 | VGG19 | Xception | ResNet50V2 | InceptionV3 | InceptionResNetV2 | MobileNetV2 | DenseNet169 | NASNetMobile | EfficientNetB7 | ConvNeXtBase |
-|----------------------------------------|---------|----------|------------|-------------|-------------------|-------------|-------------|--------------|----------------|--------------|
-| **Overall Accuracy (avg. of 250 epochs)** | 0.72    | 0.72     | 0.77       | 0.74        | 0.72              | 0.71        | 0.73        | 0.72         | 0.69           | 0.68         |
-| **Overall Accuracy (last epoch)**       | 0.75    | 0.75     | 0.79       | 0.72        | 0.68              | 0.70        | 0.77        | 0.67         | 0.72           | 0.71         |
-| **Binary Accuracy (avg. of 250 epochs)**| 0.72    | 0.72     | 0.77       | 0.74        | 0.72              | 0.71        | 0.73        | 0.72         | 0.69           | 0.68         |
-| **Binary Accuracy (last epoch)**        | 0.75    | 0.75     | 0.79       | 0.72        | 0.68              | 0.70        | 0.77        | 0.67         | 0.72           | 0.71         |
-| **Overall Categorical Accuracy (avg.)** | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00           | 1.00         |
-| **Overall Categorical Accuracy (last)** | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00           | 1.00         |
-| **Top-k Categorical Accuracy (avg.)**   | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00           | 1.00         |
-| **Top-k Categorical Accuracy (last)**   | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00           | 1.00         |
-| **Precision (avg. of 250 epochs)**      | 0.57    | 0.57     | 0.60       | 0.56        | 0.54              | 0.48        | 0.53        | 0.55         | 0.06           | 0.48         |
-| **Precision (last epoch)**              | 0.61    | 0.63     | 0.64       | 0.50        | 0.46              | 0.45        | 0.64        | 0.48         | 0.00           | 0.50         |
-| **Recall (avg. of 250 epochs)**         | 0.57    | 0.53     | 0.39       | 0.42        | 0.48              | 0.55        | 0.50        | 0.60         | 0.08           | 0.51         |
-| **Recall (last epoch)**                | 0.45    | 0.48     | 0.38       | 0.57        | 0.63              | 0.45        | 0.35        | 0.72         | 0.00           | 0.39         |
-| **Loss (avg. of 250 epochs)**           | 1.20    | 12.87    | 27.21      | 21.32       | 12.47             | 19.09       | 13.01       | 7.20         | 7.24           | 5.72         |
-| **Loss (last epoch)**                  | 1.55    | 17.80    | 35.89      | 25.14       | 18.29             | 24.75       | 19.52       | 10.13        | 13.39          | 7.38         |
+| Metric                                 | VGG19 | Xception | ResNet50V2 | InceptionV3 | InceptionResNetV2 | MobileNetV2 | DenseNet169 | NASNetMobile | ConvNeXtBase |
+|----------------------------------------|---------|----------|------------|-------------|-------------------|-------------|-------------|--------------|--------------|
+| **Overall Accuracy (avg. of 250 epochs)** | 0.72    | 0.72     | 0.77       | 0.74        | 0.72              | 0.71        | 0.73        | 0.72         | 0.68         |
+| **Overall Accuracy (last epoch)**       | 0.75    | 0.75     | 0.79       | 0.72        | 0.68              | 0.70        | 0.77        | 0.67         | 0.71         |
+| **Binary Accuracy (avg. of 250 epochs)**| 0.72    | 0.72     | 0.77       | 0.74        | 0.72              | 0.71        | 0.73        | 0.72         | 0.68         |
+| **Binary Accuracy (last epoch)**        | 0.75    | 0.75     | 0.79       | 0.72        | 0.68              | 0.70        | 0.77        | 0.67         | 0.71         |
+| **Overall Categorical Accuracy (avg.)** | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00         |
+| **Overall Categorical Accuracy (last)** | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00         |
+| **Top-k Categorical Accuracy (avg.)**   | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00         |
+| **Top-k Categorical Accuracy (last)**   | 1.00    | 1.00     | 1.00       | 1.00        | 1.00              | 1.00        | 1.00        | 1.00         | 1.00         |
+| **Precision (avg. of 250 epochs)**      | 0.57    | 0.57     | 0.60       | 0.56        | 0.54              | 0.48        | 0.53        | 0.55         | 0.48         |
+| **Precision (last epoch)**              | 0.61    | 0.63     | 0.64       | 0.50        | 0.46              | 0.45        | 0.64        | 0.48         | 0.50         |
+| **Recall (avg. of 250 epochs)**         | 0.57    | 0.53     | 0.39       | 0.42        | 0.48              | 0.55        | 0.50        | 0.60         | 0.51         |
+| **Recall (last epoch)**                | 0.45    | 0.48     | 0.38       | 0.57        | 0.63              | 0.45        | 0.35        | 0.72         | 0.39         |
+| **Loss (avg. of 250 epochs)**           | 1.20    | 12.87    | 27.21      | 21.32       | 12.47             | 19.09       | 13.01       | 7.20         | 5.72         |
+| **Loss (last epoch)**                  | 1.55    | 17.80    | 35.89      | 25.14       | 18.29             | 24.75       | 19.52       | 10.13        | 7.38         |
 
 ## Setup used for Evaluation
 
