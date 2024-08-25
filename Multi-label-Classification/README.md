@@ -17,9 +17,6 @@ Certainly. Here's a comprehensive breakdown of the running experiments, detailin
 - **Notebook: `Multilabel-Classification/multilabel_TL_DenseNet169.ipynb`**  
   **Description**: Applies the DenseNet169 architecture for multi-label PCOS classification using transfer learning.
 
-- **Notebook: `Multilabel-Classification/multilabel_TL_EfficientNetB7.ipynb`**  
-  **Description**: Implements the EfficientNetB7 architecture for multi-label PCOS classification through transfer learning.
-
 - **Notebook: `Multilabel-Classification/multilabel_TL_InceptionResNetV2.ipynb`**  
   **Description**: Leverages the InceptionResNetV2 architecture for multi-label PCOS classification with transfer learning.
 
