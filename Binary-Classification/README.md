@@ -20,9 +20,6 @@ Certainly. Here's a comprehensive breakdown of the running experiments, detailin
 - **Notebook: `DenseNet169.ipynb`**  
   **Description**: Applies the DenseNet169 architecture for binary PCOS classification using transfer learning.
 
-- **Notebook: `EfficientNetB7.ipynb`**  
-  **Description**: Utilizes the EfficientNetB7 model for binary PCOS classification through transfer learning.
-
 - **Notebook: `ConvNext.ipynb`**  
   **Description**: Implements the ConvNeXt Base model for binary PCOS classification using transfer learning techniques.
 
