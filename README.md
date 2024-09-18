@@ -25,12 +25,13 @@ Our study evaluates the following models:
 9. XGBoost Classifier
 10. LightGBM Classifier
 
-#### Binary Classification:
-- Models 1-8: `/Binary-Classification/ML_Models_1.ipynb`
-- Models 9-10: `/Binary-Classification/ML_Models_2.ipynb`
+#### Binary Classification: 
 
-#### Multi-label Classification:
-- All models: `/Multi-label-Classification/multilabel_ML.ipynb`
+- All models can be found here - `/Binary-Classification/ML_Models.ipynb`
+
+#### Multi-label Classification: 
+
+- All models can be found here - `/Multi-label-Classification/ML_Models.ipynb`
 
 ### Transfer Learning (Deep Learning Architectures)
 
@@ -45,20 +46,12 @@ Our study evaluates the following models:
 9. ConvNeXtBase
 
 #### Binary Classification:
-- Models 1-7: `/Binary-Classification/7_Transfer_Learning_Models.ipynb`
-- Model 8: `/Binary-Classification/DenseNet169.ipynb`
-- Model 9: `/Binary-Classification/ConvNext.ipynb`
+
+- All models can be found here - `/Binary-Classification/TL_Models.ipynb`
 
 #### Multi-label Classification:
-- Model 1: `/Multi-label-Classification/multilabel_TL_InceptionResNetV2.ipynb`
-- Model 2: `/Multi-label-Classification/multilabel_TL_InceptionV3.ipynb`
-- Model 3: `/Multi-label-Classification/multilabel_TL_MobileNetV2.ipynb`
-- Model 4: `/Multi-label-Classification/multilabel_TL_NASNetMobile.ipynb`
-- Model 5: `/Multi-label-Classification/multilabel_TL_ResNet50V2.ipynb`
-- Model 6: `/Multi-label-Classification/multilabel_TL_VGG19.ipynb`
-- Model 7: `/Multi-label-Classification/multilabel_TL_Xception.ipynb`
-- Model 8: `/Multi-label-Classification/multilabel_TL_DenseNet169.ipynb`
-- Model 9: `/Multi-label-Classification/multilabel_TL_ConvNeXtBase.ipynb`
+
+- All models can be found here - `/Multi-label-Classification/TL_Models.ipynb`
 
 Our findings suggest that both machine learning and transfer learning approaches hold significant promise for automated PCOS detection. However, further research is needed to optimize these techniques and improve their clinical applicability.
 
@@ -69,27 +62,22 @@ A comprehensive technical paper detailing our methodology, results, and insights
 ```
 .
 ├── Binary-Classification/
-│   ├── 7_Transfer_Learning_Models.ipynb
-│   ├── ConvNext.ipynb
-│   ├── DenseNet169.ipynb
-│   ├── ML_Models_1.ipynb
-│   ├── ML_Models_2.ipynb
+│   ├── ML_Models.ipynb
+│   ├── ML_Models.py
+│   ├── TL_Models.ipynb
+│   ├── TL_Models.py
 │   └── README.md
 ├── Multi-label-Classification/
-│   ├── multilabel_ML.ipynb
-│   ├── multilabel_TL_ConvNeXtBase.ipynb
-│   ├── multilabel_TL_DenseNet169.ipynb
-│   ├── multilabel_TL_InceptionResNetV2.ipynb
-│   ├── multilabel_TL_InceptionV3.ipynb
-│   ├── multilabel_TL_MobileNetV2.ipynb
-│   ├── multilabel_TL_NASNetMobile.ipynb
-│   ├── multilabel_TL_ResNet50V2.ipynb
-│   ├── multilabel_TL_VGG19.ipynb
-│   ├── multilabel_TL_Xception.ipynb
+│   ├── ML_Models.ipynb
+│   ├── ML_Models.py
+│   ├── TL_Models.ipynb
+│   ├── TL_Models.py
 │   └── README.md
 ├── Tabular Dataset/
+├── LICENSE
 ├── README.md
-└── run.sh
+├── run.sh
+└── Workflow_Architecture.png
 ```
 
 ## Installation
@@ -148,58 +136,87 @@ Certainly. Here's a comprehensive breakdown of the running experiments, detailin
 
 ### Binary Classification
 
-- **Notebook: `Binary-Classification/ML_Models_1.ipynb`**  
-  **Description**: Implements and evaluates multiple classical machine learning models, including Random Forest, Ridge Classifier, Bagging Classifier (ExtraTreeClassifier), MLPClassifier, KNeighborsClassifier, DecisionTreeClassifier, AdaBoostClassifier, and GaussianNB for binary PCOS classification.
+- **Notebook: `ML_Models.ipynb`**  
+  **Description**: Implements and evaluates ten classical machine learning models, including Random Forest, Ridge Classifier, Bagging Classifier (ExtraTreeClassifier), MLPClassifier, KNeighborsClassifier, DecisionTreeClassifier, AdaBoostClassifier, GaussianNB, XGBClassifier and LGBMClassifier for binary PCOS classification.
 
-- **Notebook: `Binary-Classification/ML_Models_2.ipynb`**  
-  **Description**: Focuses on advanced gradient boosting models, specifically XGBClassifier and LGBMClassifier, for binary PCOS classification.
-
-- **Notebook: `Binary-Classification/7_Transfer_Learning_Models.ipynb`**  
-  **Description**: Implements and compares seven pre-trained deep learning models (InceptionResNetV2, InceptionV3, MobileNetV2, NasNetMobile, ResNet50V2, VGG19, Xception) for transfer learning in binary PCOS classification.
-
-- **Notebook: `Binary-Classification/DenseNet169.ipynb`**  
-  **Description**: Applies the DenseNet169 architecture for binary PCOS classification using transfer learning.
-
-- **Notebook: `Binary-Classification/ConvNext.ipynb`**  
-  **Description**: Implements the ConvNeXt Base model for binary PCOS classification using transfer learning techniques.
+- **Notebook: `TL_Models.ipynb`**  
+  **Description**: Implements and compares nine pre-trained deep learning models (ConvNeXtBase, DenseNet169, InceptionResNetV2, InceptionV3, MobileNetV2, NasNetMobile, ResNet50V2, VGG19, Xception) for transfer learning in binary PCOS classification.
 
 ### Multi-label Classification
 
-- **Notebook: `Multilabel-Classification/multilabel_ML.ipynb`**  
+- **Notebook: `Multilabel-Classification/ML_Models.ipynb`**  
   **Description**: Implements ten machine learning models, including Random Forest, Ridge, Bagging, MLP, KNN, Decision Tree, AdaBoost, Gaussian NB, XGBoost, and LightGBM, for multi-label PCOS classification.
 
-- **Notebook: `Multilabel-Classification/multilabel_TL_ConvNeXtBase.ipynb`**  
-  **Description**: Utilizes the ConvNeXtBase architecture for multi-label PCOS classification using transfer learning.
-
-- **Notebook: `Multilabel-Classification/multilabel_TL_DenseNet169.ipynb`**  
-  **Description**: Applies the DenseNet169 architecture for multi-label PCOS classification using transfer learning.
-
-- **Notebook: `Multilabel-Classification/multilabel_TL_InceptionResNetV2.ipynb`**  
-  **Description**: Leverages the InceptionResNetV2 architecture for multi-label PCOS classification with transfer learning.
-
-- **Notebook: `Multilabel-Classification/multilabel_TL_InceptionV3.ipynb`**  
-  **Description**: Uses the InceptionV3 architecture for multi-label PCOS classification via transfer learning.
-
-- **Notebook: `Multilabel-Classification/multilabel_TL_MobileNetV2.ipynb`**  
-  **Description**: Employs the MobileNetV2 architecture for multi-label PCOS classification using transfer learning.
-
-- **Notebook: `Multilabel-Classification/multilabel_TL_NASNetMobile.ipynb`**  
-  **Description**: Applies the NASNetMobile architecture for multi-label PCOS classification through transfer learning.
-
-- **Notebook: `Multilabel-Classification/multilabel_TL_ResNet50V2.ipynb`**  
-  **Description**: Implements the ResNet50V2 architecture for multi-label PCOS classification with transfer learning.
-
-- **Notebook: `Multilabel-Classification/multilabel_TL_VGG19.ipynb`**  
-  **Description**: Uses the VGG19 architecture for multi-label PCOS classification through transfer learning.
-
-- **Notebook: `Multilabel-Classification/multilabel_TL_Xception.ipynb`**  
-  **Description**: Utilizes the Xception architecture for multi-label PCOS classification using transfer learning.
+- **Notebook: `Multilabel-Classification/TL_Models.ipynb`**  
+  **Description**: Utilizes nine pretrained models including ConvNeXtBase, DenseNet169, InceptionResNetV2, InceptionV3, MobileNetV2, NASNetMobile, ResNet50V2, VGG19 and Xception architectures for multi-label PCOS classification using transfer learning.
 
 #### run.sh:
 Description: A shell script for the creation of setup required for experiments.
 
 ### Tabular Dataset
 
+
+## Usage via Terminal
+
+### Binary Classification
+
+#### Machine Learning Models
+
+To run the machine learning models for binary classification:
+
+```bash
+python Binary-Classification/ML_Models.py --train_excel path/to/train_data.xlsx --test_csv path/to/test_data.csv --train_image_dir path/to/train_images --test_image_dir path/to/test_images
+```
+
+Example:
+```bash
+python Binary-Classification/ML_Models.py --train_excel dataset/train/class_label.xlsx --test_csv dataset/test_label_binary.csv --train_image_dir dataset/train/images --test_image_dir dataset/test/images
+```
+
+#### Transfer Learning Models
+
+To run the transfer learning models for binary classification:
+
+```bash
+python Binary-Classification/TL_Models.py --train_path path/to/train_data.xlsx --test_path path/to/test_data.csv --image_dir path/to/images --model_name MODEL_NAME
+```
+
+Example:
+```bash
+python Binary-Classification/TL_Models.py --train_path dataset/train/class_label.xlsx --test_path dataset/test_label_binary.csv --image_dir dataset/train/images --model_name ConvNeXtBase
+```
+
+Replace `MODEL_NAME` with one of: ConvNeXtBase, DenseNet169, InceptionResNetV2, InceptionV3, MobileNetV2, NASNetMobile, ResNet50V2, VGG19, Xception.
+
+### Multi-label Classification
+
+#### Machine Learning Models
+
+To run the machine learning models for multi-label classification:
+
+```bash
+python Multi-label-Classification/ML_Models.py --train_val_path path/to/train_val_data.xlsx --test_path path/to/test_data.csv --image_dir path/to/images --image_size IMAGE_SIZE
+```
+
+Example:
+```bash
+python Multi-label-Classification/ML_Models.py --train_val_path dataset/train_val/multilabelpcos.xlsx --test_path dataset/test/test_label_multi.csv --image_dir dataset/train_val/images --image_size 300
+```
+
+#### Transfer Learning Models
+
+To run the transfer learning models for multi-label classification:
+
+```bash
+python Multi-label-Classification/TL_Models.py --excel_path path/to/train_val_data.xlsx --csv_path path/to/test_data.csv --image_dir path/to/train_images --test_image_dir path/to/test_images --model MODEL_NAME --batch_size BATCH_SIZE --epochs EPOCHS
+```
+
+Example:
+```bash
+python Multi-label-Classification/TL_Models.py --excel_path dataset/train_val/multilabelpcos.xlsx --csv_path dataset/test/test_label_multi.csv --image_dir dataset/train_val/images --test_image_dir dataset/test/images --model ConvNeXtBase --batch_size 32 --epochs 250
+```
+
+Replace `MODEL_NAME` with one of: ConvNeXtBase, DenseNet169, InceptionResNetV2, InceptionV3, MobileNetV2, NASNetMobile, ResNet50V2, VGG19, Xception.
 
 ## Results
 
