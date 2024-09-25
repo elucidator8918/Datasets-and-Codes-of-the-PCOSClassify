@@ -1,12 +1,12 @@
-# Datasets and Codes of the PCOSGen: An ultrasound imaging-based dataset and its benchmarking for automatic classification of poly cystic ovary syndrome
+# Datasets and Codes of the PCOSGen: An ultrasound imaging-based dataset and its benchmarking for automatic classification of polycystic ovary syndrome
 
-This repository contains the datasets and codes utilized in the manuscript titled 'PCOSGen: An ultrasound imaging-based dataset and its benchmarking for automatic classification of poly cystic ovary syndrome'. At first, the codes utilized to benchmark the PCOSGen train and test dataset have been discussed. The PCOSGen train and test dataset contains ultraound images with binary labels. This dataset was also utilized in the Auto-PCOS Classification challenge. An extended version of the PCOSGen train and test dataset which contains multi-labels has also been now released and benchmarked. The benchmarking codes of the multi-label classification have been put in a second folder. A third dataset, the tabular dataset collected by the team has also been released and discussed in this gtihub repository. 
+This repository contains the datasets and codes utilized in the manuscript 'PCOSGen: An ultrasound imaging-based dataset and its benchmarking for automatic classification of polycystic ovary syndrome'. At first, the codes used to benchmark the PCOSGen train and test dataset have been discussed. The PCOSGen train and test dataset contains ultrasound images with binary labels. This dataset was also utilized in the Auto-PCOS Classification challenge. An extended version of the PCOSGen train and test dataset containing multi-labels has also been released and benchmarked. The benchmarking codes of the multi-label classification have been put in a second folder. A third dataset, the tabular dataset collected by the team has also been released and discussed in this GitHub repository. 
 
 # Benchmarking-Codes-of-the-PCOSGen: Binary & Multilabel Classification
 
 ## Introduction
 
-The PCOSGen dataset, a first-of-its-kind resource, comprises diverse training and test datasets collected from multiple internet sources, including YouTube, ultrasoundcases.info, and Kaggle. It has been meticulously annotated by experienced gynecologists based in New Delhi, India, specifically for this research.
+The PCOSGen dataset, a first-of-its-kind resource, comprises diverse training and test datasets collected from multiple internet sources, including YouTube, ultrasoundcases.info, and Kaggle. It has been meticulously annotated by experienced gynaecologists based in New Delhi, India, specifically for this research.
 
 Our study evaluates the following models:
 
@@ -128,9 +128,9 @@ rm PCOSGen-train.zip PCOSGen-test.zip
 
 This will download and unzip the dataset files for you.
 
-Note: It only contains the binary labels as PCOS and Non-PCOS.
+Note: It only contains the binary labels PCOS and Non-PCOS.
 The full PCOS-Gen dataset which contains binary and multi-labels is available [here](). 
-Similar steps can be followed to run the multi-label based dataset. 
+Similar steps can be followed to run the multi-label-based dataset. 
 
 ## Running Experiments
 
@@ -150,7 +150,7 @@ Certainly. Here's a comprehensive breakdown of the running experiments, detailin
   **Description**: Implements ten machine learning models, including Random Forest, Ridge, Bagging, MLP, KNN, Decision Tree, AdaBoost, Gaussian NB, XGBoost, and LightGBM, for multi-label PCOS classification.
 
 - **Notebook: `Multilabel-Classification/TL_Models.ipynb`**  
-  **Description**: Utilizes nine pretrained models including ConvNeXtBase, DenseNet169, InceptionResNetV2, InceptionV3, MobileNetV2, NASNetMobile, ResNet50V2, VGG19 and Xception architectures for multi-label PCOS classification using transfer learning.
+  **Description**: Utilizes nine pre-trained models including ConvNeXtBase, DenseNet169, InceptionResNetV2, InceptionV3, MobileNetV2, NASNetMobile, ResNet50V2, VGG19 and Xception architectures for multi-label PCOS classification using transfer learning.
 
 #### run.sh:
 Description: A shell script for the creation of setup required for experiments.
@@ -228,7 +228,7 @@ All models were trained for 250 epochs with minimal preprocessing, using a 40 GB
 
 ## Contributions
 
-Palak Handa conceptualized the research idea, was involved in data collection, and manuscript writing. Anushka Saini performed the benchmarking, contributed in writing the initial draft of the manuscript. Siddhant Dutta was involved in data wrangling, analysis, and contributed in initial manuscript writing and github development. Nishi Choudhary was involved in suggestions and performed the medical annotations of the PCOSGen train and test dataset. Ammireza Mahbod, Florian Schwarzhans, and Ramona Woitek were involved in suggestions and manuscript reviewing. Nidhi Goel was involved in the project administration. The authors are thankful to Harsh Pathak for his initial attempt for data collection, Charvi Bansal for helping in initial stages of the benchmarking and manuscript writing, Nikita Garg for developing the FEM-AI Labeller application and Manya Joshi for putting it on github. The tabular dataset was collected by MISAHUB Research Team: Mahima Singh, Bandana Pal , Naila Jan, Anaa Makhdoomi, Esha Gupta, and Muskan Gupta.The PCOSGen-train and PCOS-Gen-test datasets have been actively downloaded more than 1000 times and were utilized in the Auto-PCOS Classification challenge. The challenge page is available here - [Visit the Link](https://misahub.in/pcos/index.html)
+Palak Handa conceptualized the research idea, was involved in data collection, and manuscript writing. Anushka Saini performed the benchmarking and contributed in writing the initial draft of the manuscript. Siddhant Dutta was involved in data wrangling, analysis, and contributed to initial manuscript writing and GitHub development. Nishi Choudhary was involved in suggestions and performed the medical annotations of the PCOSGen train and test dataset. Ammireza Mahbod, Florian Schwarzhans, and Ramona Woitek were involved in suggestions and manuscript reviewing. Nidhi Goel was involved in the project administration. The authors are thankful to Harsh Pathak for his initial attempt for data collection, Charvi Bansal for helping in the initial stages of the benchmarking and manuscript writing, Nikita Garg for developing the FEM-AI Labeller application and Manya Joshi for putting it on GitHub. The tabular dataset was collected by MISAHUB Research Team: Mahima Singh, Bandana Pal , Naila Jan, Anaa Makhdoomi, Esha Gupta, and Muskan Gupta.The PCOSGen-train and PCOS-Gen-test datasets have been actively downloaded more than 1000 times and were utilized in the Auto-PCOS Classification challenge. The challenge page is available here - [Visit the Link](https://misahub.in/pcos/index.html)
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
