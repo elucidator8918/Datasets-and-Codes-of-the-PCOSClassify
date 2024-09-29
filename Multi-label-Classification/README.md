@@ -1,4 +1,4 @@
-# Benchmarking-Codes-of-the-PCOSGen: Multi-Label Classification
+# Datasets and Codes of the PCOSGen: Multi-label Classification
 
 This directory contains the benchmarking codes and evaluation scripts for the PCOSGen Multi-Label Classification Dataset. The PCOSGen dataset is utilized to test and benchmark various Multi-Label classification models. The provided codes enable the replication of experiments, evaluation of model performance, and comparison of different algorithms on this specific dataset.
 
@@ -76,3 +76,7 @@ rm PCOSGen-train.zip PCOSGen-test.zip
 ```
 
 This will download and unzip the dataset files for you.
+
+Note: It only contains the binary labels PCOS and Non-PCOS.
+The full PCOS-Gen dataset which contains binary and multi-labels is available [here](https://doi.org/10.6084/m9.figshare.27106024.v1). 
+Similar steps can be followed to run the multi-label-based dataset. 

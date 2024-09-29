@@ -2,10 +2,6 @@
 
 This repository contains the datasets and codes utilized in the manuscript _**'PCOSGen: An ultrasound imaging-based dataset and its benchmarking for automatic classification of polycystic ovary syndrome'**_. At first, the codes used to benchmark the PCOSGen train and test dataset have been discussed. The PCOSGen train and test dataset contains ultrasound images with binary labels. This dataset was also utilized in the Auto-PCOS Classification challenge. An extended version of the PCOSGen train and test dataset containing multi-labels has also been released and benchmarked. The benchmarking codes of the multi-label classification have been put in a second folder. A third dataset, the tabular dataset collected by the team has also been released and discussed in this GitHub repository. 
 
-<!---
-# Benchmarking-Codes-of-the-PCOSGen: Binary & Multilabel Classification
--->
-
 ## Introduction
 
 The PCOSGen dataset, a first-of-its-kind resource, comprises diverse training and test datasets collected from multiple internet sources, including YouTube, ultrasoundcases.info, and Kaggle. It has been meticulously annotated by experienced gynaecologists based in New Delhi, India, specifically for this research.
@@ -53,7 +49,11 @@ Our study evaluates the following models:
 
 - All models can be found here - `/Multi-label-Classification/TL_Models.ipynb`
 
-Our findings suggest that both machine learning and transfer learning approaches hold significant promise for automated PCOS detection. However, further research is needed to optimize these techniques and improve their clinical applicability.
+#### Tabular Dataset:
+
+- A Detailed Description regarding the research conducted could be found here - `/Tabular-Dataset/README.md`
+
+Our findings suggest that both machine learning and transfer learning approaches hold significant promise for automated PCOS detection. However, further research is needed to optimize these techniques and improve their clinical applicability. 
 
 A comprehensive technical paper detailing our methodology, results, and insights is currently in preparation and will be available soon - Link - {WIP}
 
@@ -156,9 +156,6 @@ Certainly. Here's a comprehensive breakdown of the running experiments, detailin
 
 #### run.sh:
 Description: A shell script for the creation of setup required for experiments.
-
-
-
 
 ## Usage via Terminal
 
