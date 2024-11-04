@@ -78,5 +78,5 @@ rm PCOSGen-train.zip PCOSGen-test.zip
 This will download and unzip the dataset files for you.
 
 Note: It only contains the binary labels PCOS and Non-PCOS.
-The full PCOS-Gen dataset which contains binary and multi-labels is available [here](https://doi.org/10.6084/m9.figshare.27106024.v1). 
+The full PCOSClassify dataset which contains binary and multi-labels is available [here](https://doi.org/10.6084/m9.figshare.27600816.v1). 
 Similar steps can be followed to run the multi-label-based dataset. 
