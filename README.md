@@ -3,7 +3,7 @@
 This repository contains the datasets and codes utilized in the manuscript _**'PCOSClassify: An Ultrasound Imaging Dataset and Benchmark for Machine Learning Classification of PCOS'**_. 
 
 
-
+https://figshare.com/articles/dataset/Datasets_of_the_PCOSClassify/27600816?file=50173173
 At first, the codes used to benchmark the PCOSClassify train and test dataset have been discussed. The PCOSGen train and test dataset contains ultrasound images with binary labels. This dataset was also utilized in the Auto-PCOS Classification challenge. An extended version of the PCOSGen train and test dataset containing multi-labels has also been released and benchmarked. The benchmarking codes of the multi-label classification have been put in a second folder. A third dataset, the tabular dataset collected by the team has also been released and discussed in this GitHub repository. 
 
 ## Introduction
