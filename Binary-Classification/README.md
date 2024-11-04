@@ -1,6 +1,6 @@
-# Datasets and Codes of the PCOSGen: Binary Classification
+# Datasets and Codes of the PCOSClassify: Binary Classification
 
-This directory contains the benchmarking codes and evaluation scripts for the PCOSGen Binary Classification Dataset. The PCOSGen dataset is utilized to test and benchmark various binary classification models. The provided codes enable the replication of experiments, evaluation of model performance, and comparison of different algorithms on this specific dataset.
+This directory contains the benchmarking codes and evaluation scripts for the PCOSClassify Binary Classification Dataset. The PCOSClassify dataset is utilized to test and benchmark various binary classification models. The provided codes enable the replication of experiments, evaluation of model performance, and comparison of different algorithms on this specific dataset.
 
 ## Running Experiments
 
@@ -53,8 +53,8 @@ You have two options for installing the dataset: downloading directly or using t
 
 You can download the datasets directly from the following links:
 
-- **PCOSGen Training Dataset**: [Download here](https://zenodo.org/records/10430727)
-- **PCOSGen Testing Dataset**: [Download here](https://zenodo.org/records/10960327)
+- **PCOSClassify Training Dataset**: [Download here](https://zenodo.org/records/10430727)
+- **PCOSClassify Testing Dataset**: [Download here](https://zenodo.org/records/10960327)
 
 After downloading, make sure to unzip the files:
 
