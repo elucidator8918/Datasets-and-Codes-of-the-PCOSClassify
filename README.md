@@ -2,6 +2,24 @@
 
 This repository contains the datasets and codes utilized in the manuscript _**'PCOSClassify: An Ultrasound Imaging Dataset and Benchmark for Machine Learning Classification of PCOS'**_. 
 
+PCOSClassify consists of two different types of datasets. The first dataset consists of ultrasound images of healthy and un-healthy females in the context of PCOS disease with binary and multi-labels. The binary labels and its ultrasound images were utilized as a part of the Auto-PCOS Classification Challenge. The multi-labels includes Round and Thin walled with posterior enhancement, Cumulus oophorous, Corpus luteum, Hemorrhagic ovarian cyst, Hemorrhagic corpus luteum, Endometrioma, Serous cystadenoma, Serous cystadenocarcinoma, Mucinous cystadenoma, Mucinous cystadenocarcinoma, Dermoid cyst, Dermoid plug, Rokitansky nodule, Dermoid mesh, Dot dash pattern, Floating balls sign, Ovarian fibroma, Ovarian thecoma, Metastasis, Para ovarian cyst, Polycystic ovary, Ovarian hyperstimulation syndrome, Ovarian torsion, Thick hyperechoic margin, Vaginal ultrasound, Right ovary, Transvaginal ultrasound, Gestational sac, Foetus, Chocolate cyst, Cervix, Urinary bladder, Polyp, Cervical cyst, Adnexa, Vagina, Ovary, and Uterus. The second dataset consists of a tabular data which was collected through a research survey of 242 women aged 18 to 45 years, conducted to investigate menstrual cycles and hygiene among women from various geographical regions across India, focusing on different age groups. It consists of questions and answers about menstrual cycles, lifestyle factors, and hygiene practices of healthy and un-healthy females in the context of PCOS disease. Both the datasets are available (here)[https://figshare.com/articles/dataset/Datasets_of_the_PCOSClassify/27600816?file=50173173]
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Datasets and Codes of the PCOSClassify: An Ultrasound Imaging Dataset and Benchmark for Machine Learning Classification of PCOS
+
+This repository contains the datasets and codes utilized in the manuscript _**'PCOSClassify: An Ultrasound Imaging Dataset and Benchmark for Machine Learning Classification of PCOS'**_. 
+
 
 https://figshare.com/articles/dataset/Datasets_of_the_PCOSClassify/27600816?file=50173173
 At first, the codes used to benchmark the PCOSClassify train and test dataset have been discussed. The PCOSGen train and test dataset contains ultrasound images with binary labels. This dataset was also utilized in the Auto-PCOS Classification challenge. An extended version of the PCOSGen train and test dataset containing multi-labels has also been released and benchmarked. The benchmarking codes of the multi-label classification have been put in a second folder. A third dataset, the tabular dataset collected by the team has also been released and discussed in this GitHub repository. 
