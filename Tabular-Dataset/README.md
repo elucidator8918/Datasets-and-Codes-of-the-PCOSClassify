@@ -1,12 +1,12 @@
-# Datasets and Codes of the PCOSGen: Tabular Dataset
+# Tabular Dataset
 
-This README contains information about various datasets related to Polycystic Ovary Syndrome (PCOS) research. The datasets span different types, including genomic, proteomic, and imaging data.
+This README contains information about various existing AI datasets related to Polycystic Ovary Syndrome (PCOS) research. These datasets span different types, including genomic, proteomic, and imaging data.
 
-### Dataset Description
+### Existing Dataset Description
 
-The datasets within the [table](#10076750) are diverse and focused on genomic, proteomic, and imaging data, offering comprehensive coverage for PCOS research. The genomic datasets include gene expression profiles, SNP data, and RNA sequencing, which are key to understanding the genetic basis of PCOS. Proteomic data focuses on protein levels and functional pathways altered in PCOS. Imaging datasets, particularly ultrasound images, are crucial for diagnosing and studying the morphological features of PCOS in clinical settings.
+The existing datasets within the [table](#10076750) are diverse and focused on genomic, proteomic, and imaging data, offering comprehensive coverage for PCOS research. The genomic datasets include gene expression profiles, SNP data, and RNA sequencing, which are key to understanding the genetic basis of PCOS. Proteomic data focuses on protein levels and functional pathways altered in PCOS. Imaging datasets, particularly ultrasound images, are crucial for diagnosing and studying the morphological features of PCOS in clinical settings.
 
-These datasets have been collected from various sources such as DRYAD, Proteome, and Array Express. They are accompanied by relevant metadata, including patient information, year of collection, and the size of the dataset, providing a rich resource for computational analysis, machine learning, and bioinformatics studies in PCOS. The data is classified by availability, where some are freely accessible while others require permissions or logins.
+These existing datasets have been collected from various sources such as DRYAD, Proteome, and Array Express. They are accompanied by relevant metadata, including patient information, year of collection, and the size of the dataset, providing a rich resource for computational analysis, machine learning, and bioinformatics studies in PCOS. The data is classified by availability, where some are freely accessible while others require permissions or logins.
 
 ![](Figure_4.png)
 
@@ -58,7 +58,7 @@ A dataset related to transcription profiling of human skeletal muscle after piog
 
 A dataset has been made available on gene expression profiling in peripheral blood mononuclear cells (PBMCs) from women with PCOS. PBMCs were collected at baseline and after treatment with pioglitazone. A total of 23 participants were selected for the study, with pioglitazone used as a treatment in all participants. Pioglitazone-induced insulin sensitivity and its connection with increased mitochondrial oxidative metabolism were studied. Access the dataset [here](#skov2008pioglitazone).
 
-### Study Design and Data Collection Methodology
+### Study Design and Data Collection Methodology of our Dataset
 
 ![](Figure_5.jpg)
 
