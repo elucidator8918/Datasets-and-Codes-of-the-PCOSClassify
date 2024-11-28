@@ -1,13 +1,26 @@
 # Datasets and Codes of the PCOSClassify: An Ultrasound Imaging Dataset and Benchmark for Machine Learning Classification of PCOS
 
-This repository contains the datasets and codes utilized in the manuscript _**'PCOSClassify: An Ultrasound Imaging Dataset and Benchmark for Machine Learning Classification of PCOS'**_. 
+This repository provides the datasets and codes used in the manuscript titled "PCOSClassify: An Ultrasound Imaging Dataset and Benchmark for Machine Learning Classification of PCOS."
 
-PCOSClassify consists of two different types of datasets. The first dataset consists of ultrasound images of healthy and un-healthy females in the context of PCOS disease with binary and multi-labels. The binary label based ultrasound images data is further called the *PCOSGen-train and PCOS-Gen-test datasets. It has been actively downloaded more than 1000 times and were utilized in the Auto-PCOS Classification challenge. The challenge page is available [here](https://misahub.in/pcos/index.html). The multi-label based ultrasound images includes multi-labels namely Round and Thin walled with posterior enhancement, Cumulus oophorous, Corpus luteum, Hemorrhagic ovarian cyst, Hemorrhagic corpus luteum, Endometrioma, Serous cystadenoma, Serous cystadenocarcinoma, Mucinous cystadenoma, Mucinous cystadenocarcinoma, Dermoid cyst, Dermoid plug, Rokitansky nodule, Dermoid mesh, Dot dash pattern, Floating balls sign, Ovarian fibroma, Ovarian thecoma, Metastasis, Para ovarian cyst, Polycystic ovary, Ovarian hyperstimulation syndrome, Ovarian torsion, Thick hyperechoic margin, Vaginal ultrasound, Right ovary, Transvaginal ultrasound, Gestational sac, Foetus, Chocolate cyst, Cervix, Urinary bladder, Polyp, Cervical cyst, Adnexa, Vagina, Ovary, and Uterus. The binary labels and the multi-labels are of the same ultrasound images. This dataset is a first-of-its-kind resource, comprises diverse training and test datasets collected from multiple internet sources, including YouTube, ultrasoundcases.info, and Kaggle. It has been meticulously annotated by experienced gynaecologist based in New Delhi, India, specifically for this research. 
+PCOSClassify includes two types of datasets:
 
-The second dataset consists of a tabular data which was collected through a research survey of 242 women aged 18 to 45 years, conducted to investigate menstrual cycles and hygiene among women from various geographical regions across India, focusing on different age groups. It consists of questions and answers about menstrual cycles, lifestyle factors, and hygiene practices of healthy and un-healthy females in the context of PCOS disease. Both the datasets are available 
-[here](https://figshare.com/articles/dataset/Datasets_of_the_PCOSClassify/27600816?file=50173173) 
+## Ultrasound Imaging Dataset:
 
-The first dataset was subjected to automatic binary and multi-label classification using vanilla AI models such as:
+This dataset contains ultrasound images categorized as healthy and unhealthy in the context of PCOS (Polycystic Ovary Syndrome). It includes binary and multi-label classifications:
+### Binary Labels: 
+These datasets, named PCOSGen-train and PCOSGen-test, have been actively downloaded over 1,000 times and were utilized in the Auto-PCOS Classification Challenge. The challenge page is available [here](https://misahub.in/pcos/index.html).
+
+### Multi-label Annotations: 
+Each ultrasound image includes multiple labels such as Round and Thin Walled with Posterior Enhancement, Cumulus Oophorous, Corpus Luteum, Hemorrhagic Ovarian Cyst, Endometrioma, Serous Cystadenoma, Ovarian Fibroma, Ovarian Hyperstimulation Syndrome, Gestational Sac, Chocolate Cyst, Polyp, Vaginal Ultrasound, and many more.
+
+Both the binary and multi-label datasets are derived from the same ultrasound images. This dataset is the first of its kind, comprising diverse training and test sets collected from various internet sources, including YouTube, ultrasoundcases.info, and Kaggle. It has been meticulously annotated by an experienced gynecologist based in New Delhi, India, specifically for this research.
+
+## Tabular Dataset:
+
+This dataset was collected through a research survey of 242 women aged 18 to 45 years. The survey focused on investigating menstrual cycles, lifestyle factors, and hygiene practices across different age groups and geographical regions of India. It includes comprehensive data on menstrual health and PCOS-related conditions, providing a valuable resource for understanding the correlation between lifestyle and PCOS.
+Both the datasets are available [here](https://figshare.com/articles/dataset/Datasets_of_the_PCOSClassify/27600816?file=50173173) 
+
+The ultrasound imaging dataset has been used for automatic binary and multi-label classification using standard AI models, such as:
 
 ### Machine Learning Algorithms
 
