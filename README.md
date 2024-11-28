@@ -8,10 +8,10 @@ PCOSClassify includes two types of datasets:
 
 This dataset contains ultrasound images categorized as healthy and unhealthy in the context of PCOS (Polycystic Ovary Syndrome). It includes binary and multi-label classifications:
 ### Binary Labels: 
-These datasets, named PCOSGen-train and PCOSGen-test, have been actively downloaded over 1,000 times and were utilized in the Auto-PCOS Classification Challenge. The challenge page is available [here](https://misahub.in/pcos/index.html).
+- These datasets, named PCOSGen-train and PCOSGen-test, have been actively downloaded over 1,000 times and were utilized in the Auto-PCOS Classification Challenge. The challenge page is available [here](https://misahub.in/pcos/index.html).
 
 ### Multi-label Annotations: 
-Each ultrasound image includes multiple labels such as Round and Thin Walled with Posterior Enhancement, Cumulus Oophorous, Corpus Luteum, Hemorrhagic Ovarian Cyst, Endometrioma, Serous Cystadenoma, Ovarian Fibroma, Ovarian Hyperstimulation Syndrome, Gestational Sac, Chocolate Cyst, Polyp, Vaginal Ultrasound, and many more.
+- Each ultrasound image includes multiple labels such as Round and Thin Walled with Posterior Enhancement, Cumulus Oophorous, Corpus Luteum, Hemorrhagic Ovarian Cyst, Endometrioma, Serous Cystadenoma, Ovarian Fibroma, Ovarian Hyperstimulation Syndrome, Gestational Sac, Chocolate Cyst, Polyp, Vaginal Ultrasound, and many more.
 
 Both the binary and multi-label datasets are derived from the same ultrasound images. This dataset is the first of its kind, comprising diverse training and test sets collected from various internet sources, including YouTube, ultrasoundcases.info, and Kaggle. It has been meticulously annotated by an experienced gynecologist based in New Delhi, India, specifically for this research.
 
