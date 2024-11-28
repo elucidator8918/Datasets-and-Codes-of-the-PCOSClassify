@@ -2,33 +2,11 @@
 
 This repository contains the datasets and codes utilized in the manuscript _**'PCOSClassify: An Ultrasound Imaging Dataset and Benchmark for Machine Learning Classification of PCOS'**_. 
 
-PCOSClassify consists of two different types of datasets. The first dataset consists of ultrasound images of healthy and un-healthy females in the context of PCOS disease with binary and multi-labels. The binary labels and its ultrasound images were utilized as a part of the Auto-PCOS Classification Challenge. The multi-labels includes Round and Thin walled with posterior enhancement, Cumulus oophorous, Corpus luteum, Hemorrhagic ovarian cyst, Hemorrhagic corpus luteum, Endometrioma, Serous cystadenoma, Serous cystadenocarcinoma, Mucinous cystadenoma, Mucinous cystadenocarcinoma, Dermoid cyst, Dermoid plug, Rokitansky nodule, Dermoid mesh, Dot dash pattern, Floating balls sign, Ovarian fibroma, Ovarian thecoma, Metastasis, Para ovarian cyst, Polycystic ovary, Ovarian hyperstimulation syndrome, Ovarian torsion, Thick hyperechoic margin, Vaginal ultrasound, Right ovary, Transvaginal ultrasound, Gestational sac, Foetus, Chocolate cyst, Cervix, Urinary bladder, Polyp, Cervical cyst, Adnexa, Vagina, Ovary, and Uterus. The second dataset consists of a tabular data which was collected through a research survey of 242 women aged 18 to 45 years, conducted to investigate menstrual cycles and hygiene among women from various geographical regions across India, focusing on different age groups. It consists of questions and answers about menstrual cycles, lifestyle factors, and hygiene practices of healthy and un-healthy females in the context of PCOS disease. Both the datasets are available (here)[https://figshare.com/articles/dataset/Datasets_of_the_PCOSClassify/27600816?file=50173173]
+PCOSClassify consists of two different types of datasets. The first dataset consists of ultrasound images of healthy and un-healthy females in the context of PCOS disease with binary and multi-labels. The binary label based ultrasound images data is further called the *PCOSGen-train and PCOS-Gen-test datasets have been actively downloaded more than 1000 times and were utilized in the Auto-PCOS Classification challenge. The challenge page is available here - [Visit the Link](https://misahub.in/pcos/index.html). The multi-label based ultrasound images includes multi-labels namely Round and Thin walled with posterior enhancement, Cumulus oophorous, Corpus luteum, Hemorrhagic ovarian cyst, Hemorrhagic corpus luteum, Endometrioma, Serous cystadenoma, Serous cystadenocarcinoma, Mucinous cystadenoma, Mucinous cystadenocarcinoma, Dermoid cyst, Dermoid plug, Rokitansky nodule, Dermoid mesh, Dot dash pattern, Floating balls sign, Ovarian fibroma, Ovarian thecoma, Metastasis, Para ovarian cyst, Polycystic ovary, Ovarian hyperstimulation syndrome, Ovarian torsion, Thick hyperechoic margin, Vaginal ultrasound, Right ovary, Transvaginal ultrasound, Gestational sac, Foetus, Chocolate cyst, Cervix, Urinary bladder, Polyp, Cervical cyst, Adnexa, Vagina, Ovary, and Uterus. The binary labels and the multi-labels are of the same ultrasound images. This dataset is a first-of-its-kind resource, comprises diverse training and test datasets collected from multiple internet sources, including YouTube, ultrasoundcases.info, and Kaggle. It has been meticulously annotated by experienced gynaecologist based in New Delhi, India, specifically for this research. 
 
+The second dataset consists of a tabular data which was collected through a research survey of 242 women aged 18 to 45 years, conducted to investigate menstrual cycles and hygiene among women from various geographical regions across India, focusing on different age groups. It consists of questions and answers about menstrual cycles, lifestyle factors, and hygiene practices of healthy and un-healthy females in the context of PCOS disease. Both the datasets are available (here)[https://figshare.com/articles/dataset/Datasets_of_the_PCOSClassify/27600816?file=50173173]
 
-
-
-
-
-
-
-
-
-
-
-
-# Datasets and Codes of the PCOSClassify: An Ultrasound Imaging Dataset and Benchmark for Machine Learning Classification of PCOS
-
-This repository contains the datasets and codes utilized in the manuscript _**'PCOSClassify: An Ultrasound Imaging Dataset and Benchmark for Machine Learning Classification of PCOS'**_. 
-
-
-https://figshare.com/articles/dataset/Datasets_of_the_PCOSClassify/27600816?file=50173173
-At first, the codes used to benchmark the PCOSClassify train and test dataset have been discussed. The PCOSGen train and test dataset contains ultrasound images with binary labels. This dataset was also utilized in the Auto-PCOS Classification challenge. An extended version of the PCOSGen train and test dataset containing multi-labels has also been released and benchmarked. The benchmarking codes of the multi-label classification have been put in a second folder. A third dataset, the tabular dataset collected by the team has also been released and discussed in this GitHub repository. 
-
-## Introduction
-
-The PCOSGen dataset, a first-of-its-kind resource, comprises diverse training and test datasets collected from multiple internet sources, including YouTube, ultrasoundcases.info, and Kaggle. It has been meticulously annotated by experienced gynaecologists based in New Delhi, India, specifically for this research.
-
-Our study evaluates the following models:
+The first dataset was subjected to automatic binary and multi-label classification using vanilla AI models such as:
 
 ### Machine Learning Algorithms
 
@@ -45,11 +23,11 @@ Our study evaluates the following models:
 
 #### Binary Classification: 
 
-- All models can be found here - `/Binary-Classification/ML_Models.ipynb`
+- The models can be found here - `/Binary-Classification/ML_Models.ipynb`
 
 #### Multi-label Classification: 
 
-- All models can be found here - `/Multi-label-Classification/ML_Models.ipynb`
+- The models can be found here - `/Multi-label-Classification/ML_Models.ipynb`
 
 ### Transfer Learning (Deep Learning Architectures)
 
@@ -65,19 +43,15 @@ Our study evaluates the following models:
 
 #### Binary Classification:
 
-- All models can be found here - `/Binary-Classification/TL_Models.ipynb`
+- The models can be found here - `/Binary-Classification/TL_Models.ipynb`
 
 #### Multi-label Classification:
 
-- All models can be found here - `/Multi-label-Classification/TL_Models.ipynb`
+- The models can be found here - `/Multi-label-Classification/TL_Models.ipynb`
 
 #### Tabular Dataset:
 
 - A Detailed Description regarding the research conducted could be found here - `/Tabular-Dataset/README.md`
-
-Our findings suggest that both machine learning and transfer learning approaches hold significant promise for automated PCOS detection. However, further research is needed to optimize these techniques and improve their clinical applicability. 
-
-A comprehensive technical paper detailing our methodology, results, and insights is currently in preparation and will be available soon - Link - {WIP}
 
 ## Repository Structure
 
@@ -243,13 +217,11 @@ Replace `MODEL_NAME` with one of: ConvNeXtBase, DenseNet169, InceptionResNetV2, 
 
 ## Setup used for Evaluation
 
-All models were trained for 250 epochs with minimal preprocessing, using a 40 GB DGX A100 NVIDIA GPU workstation provided by the Department of Electronics and Communication Engineering at Indira Gandhi Delhi Technical University for Women, New Delhi.
-
-### Developed Tabular Dataset for PCOS 
+All models were trained for 250 epochs with minimal preprocessing, using a 40 GB DGX A100 NVIDIA GPU workstation provided by the Department of Electronics and Communication Engineering at Indira Gandhi Delhi Technical University for Women, New Delhi, India.
 
 ## Contributions
 
-Palak Handa conceptualized the research idea, was involved in data collection, and manuscript writing. Anushka Saini performed the benchmarking and contributed in writing the initial draft of the manuscript. Siddhant Dutta was involved in data wrangling, analysis, and contributed to initial manuscript writing and GitHub development. Nishi Choudhary was involved in suggestions and performed the medical annotations of the PCOSGen train and test dataset. Ammireza Mahbod, Florian Schwarzhans, and Ramona Woitek were involved in suggestions and manuscript reviewing. Nidhi Goel was involved in the project administration. The authors are thankful to Harsh Pathak for his initial attempt for data collection, Charvi Bansal for helping in the initial stages of the benchmarking and manuscript writing, Nikita Garg for developing the FEM-AI Labeller application and Manya Joshi for putting it on GitHub. The tabular dataset was collected by MISAHUB Research Team: Mahima Singh, Bandana Pal , Naila Jan, Anaa Makhdoomi, Esha Gupta, and Muskan Gupta.The PCOSGen-train and PCOS-Gen-test datasets have been actively downloaded more than 1000 times and were utilized in the Auto-PCOS Classification challenge. The challenge page is available here - [Visit the Link](https://misahub.in/pcos/index.html)
+Palak Handa conceptualized the research idea, was involved in data collection, and manuscript writing. Anushka Saini performed the benchmarking and contributed in writing the initial draft of the manuscript. Siddhant Dutta was involved in data wrangling, analysis, and contributed to initial manuscript writing and GitHub development. Nishi Choudhary was involved in manuscript reviewing, suggestions and extensively performed the medical annotations of the first dataset. Ramona Woitek were involved in suggestions and manuscript reviewing. Nidhi Goel was involved in the project administration. The authors are thankful to Harsh Pathak for his initial attempt for data collection, Charvi Bansal for helping in the initial stages of the benchmarking and manuscript writing, Nikita Garg for developing the FEM-AI Labeller application and Manya Joshi for putting it on GitHub. The tabular dataset was collected by MISAHUB Research Team: Mahima Singh, Bandana Pal , Naila Jan, Anaa Makhdoomi, Esha Gupta, and Muskan Gupta. 
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details. All the datasets come under CC BY 4.0 NC where they maybe used for research but strictly not utilized for commercial purposes. 
