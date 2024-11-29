@@ -110,39 +110,19 @@ bash run.sh
 
 ### Installing the Dataset
 
-You have two options for installing the dataset: downloading directly or using the Zenodo API.
-
 #### 1. Direct Download
 
 You can download the datasets directly from the following links:
 
-- **PCOSGen Training Dataset**: [Download here](https://zenodo.org/records/10430727)
-- **PCOSGen Testing Dataset**: [Download here](https://zenodo.org/records/10960327)
-
+- **PCOSClassify Dataset**: [Download here](https://figshare.com/ndownloader/files/50173173)
+- 
 After downloading, make sure to unzip the files:
 
 ```bash
-unzip PCOSGen-train.zip
-unzip PCOSGen-test.zip
-```
-
-#### 2. Using Zenodo API
-
-If you prefer to use the Zenodo API, run the following commands:
-
-```bash
-zenodo_get https://doi.org/10.5281/zenodo.10430727
-zenodo_get https://doi.org/10.5281/zenodo.10960327
-unzip PCOSGen-train.zip
-unzip PCOSGen-test.zip
-rm PCOSGen-train.zip PCOSGen-test.zip
+unzip PCOSClassify\ Data.zip
 ```
 
 This will download and unzip the dataset files for you.
-
-Note: It only contains the binary labels PCOS and Non-PCOS.
-The full PCOS-Gen dataset which contains binary and multi-labels is available [here](https://doi.org/10.6084/m9.figshare.27106024.v1). 
-Similar steps can be followed to run the multi-label-based dataset. 
 
 ## Running Experiments
 
