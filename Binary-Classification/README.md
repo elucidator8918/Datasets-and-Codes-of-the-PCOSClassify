@@ -53,7 +53,7 @@ Replace `MODEL_NAME` with one of: ConvNeXtBase, DenseNet169, InceptionResNetV2, 
 You can download the datasets directly from the following links:
 
 - **PCOSClassify Dataset**: [Download here](https://figshare.com/ndownloader/files/50173173)
-- 
+
 After downloading, make sure to unzip the files:
 
 ```bash
