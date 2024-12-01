@@ -18,7 +18,7 @@ Both the binary and multi-label datasets are derived from the same ultrasound im
 ## Tabular Dataset:
 
 This dataset was collected through a research survey of 242 women aged 18 to 45 years. The survey focused on investigating menstrual cycles, lifestyle factors, and hygiene practices across different age groups and geographical regions of India. It includes comprehensive data on menstrual health and PCOS-related conditions, providing a valuable resource for understanding the correlation between lifestyle and PCOS.
-Both the datasets are available [here](https://figshare.com/articles/dataset/Datasets_of_the_PCOSClassify/27600816?file=50173173) 
+Both the datasets are available [here](https://figshare.com/articles/dataset/Datasets_of_the_PCOSClassify/27600816?file=50173173).
 
 The ultrasound imaging dataset has been used for automatic binary and multi-label classification using standard AI models, such as:
 
